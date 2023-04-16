@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraDraft</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1> BraDraft </h1>
+    </header>
+    
+    <div id="div_formação" class="form">
+        <section>
+            <form>
+            <label class = "form_txt" for="Formação">ESCOLHA SUA FORMAÇÃO:</label>
+            <select onchange = sel() id = "formulario" name="formação">
+                <option hidden>FORMAÇÃO</option>
+                <option value="4-4-2">4-4-2</option>
+                <option value="4-3-3">4-3-3</option>
+                <option value="4-5-1">4-5-1</option>
+                <option value="3-5-2">3-5-2</option>
+                </select>
+        </section>
+    </div>
+
+        <div id ="campo" class="campo">  
+
+            <div class = "cartinha">
+                <img id = "jog0" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog0_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog0_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog0_pos" class = "cartinha_pos"></div>
+                <div id = "jog0_over" class = "cartinha_ov"></div>
+                <div id = "jog0_nome" class = "cartinha_nome"></div>
+                <div id = "jog0_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog1" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog1_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog1_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog1_pos" class = "cartinha_pos"></div>
+                <div id = "jog1_over" class = "cartinha_ov"></div>
+                <div id = "jog1_nome" class = "cartinha_nome"></div>
+                <div id = "jog1_tipo" class = "cartinha_tipo"></div>
+
+            </div> <div class = "cartinha">
+                <img id = "jog2" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog2_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog2_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog2_pos" class = "cartinha_pos"></div>
+                <div id = "jog2_over" class = "cartinha_ov"></div>
+                <div id = "jog2_nome" class = "cartinha_nome"></div>
+                <div id = "jog2_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog3" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog3_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog3_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog3_pos" class = "cartinha_pos"></div>
+                <div id = "jog3_over" class = "cartinha_ov"></div>
+                <div id = "jog3_nome" class = "cartinha_nome"></div>
+                <div id = "jog3_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog4" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog4_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog4_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog4_pos" class = "cartinha_pos"></div>
+                <div id = "jog4_over" class = "cartinha_ov"></div>
+                <div id = "jog4_nome" class = "cartinha_nome"></div>
+                <div id = "jog4_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog5" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog5_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog5_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog5_pos" class = "cartinha_pos"></div>
+                <div id = "jog5_over" class = "cartinha_ov"></div>
+                <div id = "jog5_nome" class = "cartinha_nome"></div>
+                <div id = "jog5_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog6" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog6_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog6_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog6_pos" class = "cartinha_pos"></div>
+                <div id = "jog6_over" class = "cartinha_ov"></div>
+                <div id = "jog6_nome" class = "cartinha_nome"></div>
+                <div id = "jog6_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog7" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog7_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog7_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog7_pos" class = "cartinha_pos"></div>
+                <div id = "jog7_over" class = "cartinha_ov"></div>
+                <div id = "jog7_nome" class = "cartinha_nome"></div>
+                <div id = "jog7_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog8" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog8_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog8_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog8_pos" class = "cartinha_pos"></div>
+                <div id = "jog8_over" class = "cartinha_ov"></div>
+                <div id = "jog8_nome" class = "cartinha_nome"></div>
+                <div id = "jog8_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog9" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog9_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog9_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog9_pos" class = "cartinha_pos"></div>
+                <div id = "jog9_over" class = "cartinha_ov"></div>
+                <div id = "jog9_nome" class = "cartinha_nome"></div>
+                <div id = "jog9_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog10" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog10_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog10_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog10_pos" class = "cartinha_pos"></div>
+                <div id = "jog10_over" class = "cartinha_ov"></div>
+                <div id = "jog10_nome" class = "cartinha_nome"></div>
+                <div id = "jog10_tipo" class = "cartinha_tipo"></div>
+            </div> <div class = "cartinha">
+                <img id = "jog11" class ="cartinha" src="cartas/azul.png" alt="carta">
+                <img id = "jog11_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+                <img id = "jog11_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+                <div id = "jog11_pos" class = "cartinha_pos"></div>
+                <div id = "jog11_over" class = "cartinha_ov"></div>
+                <div id = "jog11_nome" class = "cartinha_nome"></div>
+                <div id = "jog11_tipo" class = "cartinha_tipo"></div>
+            </div>
+            
+
+             </div>
+       
+        
+        </div>
+    </section>
+
+    <input id = "loja" type="button" class = "button" value="🔁" onclick = clickLoja()>
+    <div id = 'cont' class="contador">5</div>
+
+    <div id = "pontuacao" class="pontua"> 
+        <p class = "pontua_txt">PONTUAÇÃO FINAL:</p>
+        <p id = 'pontuafinal' class = "pontua_txt2"></p>
+        <button class = "botao" onclick=reload() >RECOMEÇAR</button>
+     </div>
+
+    <div id = "ladinho" class = "ladinho">
+
+        <div class = "hitbox1" onclick= clickCarta(window.i)></div>
+        
+        <div class = "hitbox2" onclick= clickCarta(window.j)></div>
+
+        <div class = "hitbox3" onclick= clickCarta(window.m)></div>
+        
+        <div class = "hitbox4" onclick= clickCarta(window.n)></div>
+
+        <div id = "cartinha1" class = "cartinha">
+           
+           <img id = "carta1" class ="cartinha" src="cartas/azul.png" alt="Foto">
+           <img id = "carta1_img" src="cartas/silhueta.png"  onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+           <img id = "carta1_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+          
+           <div id = "carta1_pos" class = "cartinha_pos"></div>
+           <div id = "carta1_over" class = "cartinha_ov"></div>
+           <div id = "carta1_nome" class = "cartinha_nome" ></div>
+           <div id = "carta1_tipo" class = "cartinha_tipo"></div>     
+                 
+
+
+        </div> <div class = "cartinha">
+           
+            <img class ="cartinha" id = "carta2" src="cartas/azul.png" alt="Foto">
+            <img id = "carta2_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+            <img id = "carta2_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+           
+            <div id = "carta2_pos" class = "cartinha_pos"></div>
+            <div id = "carta2_over" class = "cartinha_ov"></div>
+            <div id = "carta2_nome" class = "cartinha_nome"></div>
+            <div id = "carta2_tipo" class = "cartinha_tipo"></div>
+ 
+         </div> <div class = "cartinha">
+           
+            <img class ="cartinha" id = "carta3" src="cartas/azul.png" alt="Foto">
+            <img id = "carta3_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+            <img id = "carta3_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+           
+            <div id = "carta3_pos" class = "cartinha_pos"></div>
+            <div id = "carta3_over" class = "cartinha_ov"></div>
+            <div id = "carta3_nome" class = "cartinha_nome"></div>
+            <div id = "carta3_tipo" class = "cartinha_tipo"></div>
+ 
+         </div> <div class = "cartinha"  >
+           
+            <img class ="cartinha" id = "carta4" src="cartas/azul.png" alt="Foto">
+            <img id = "carta4_img" src="cartas/silhueta.png" onerror="this.src='cartas/silhueta.png'" alt="foto" class = "cartinha_foto">
+            <img id = "carta4_time" src="cartas/silhueta.png" alt="time" class = "time_foto">
+           
+            <div id = "carta4_pos" class = "cartinha_pos"></div>
+            <div id = "carta4_over" class = "cartinha_ov"></div>
+            <div id = "carta4_nome" class = "cartinha_nome"></div>
+            <div id = "carta4_tipo" class = "cartinha_tipo"></div>
+ 
+         </div> 
+
+    
+        </div>
+     
+    <footer>
+
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
