@@ -325,8 +325,8 @@ function sortear() {
     window.carta1_pos = jog[0].pos;
     window.carta1_tipo = jog[0].tipo;
     window.carta1_time = jog[0].time;
-    window.carta1_img ='http://127.0.0.1:5500/cartas/' + window.carta1_id  + ".png";
-    window.carta1_time ='http://127.0.0.1:5500/times/' + window.carta1_time  + ".png"; 
+    window.carta1_img ='cartas/' + window.carta1_id  + ".png";
+    window.carta1_time ='times/' + window.carta1_time  + ".png"; 
 
     img = document.getElementById('carta1_pos');
     img.innerHTML = window.carta1_pos;
@@ -353,8 +353,8 @@ function sortear() {
     window.carta2_pos = jog[1].pos;
     window.carta2_tipo = jog[1].tipo;
     window.carta2_time = jog[1].time;
-    window.carta2_img ='http://127.0.0.1:5500/cartas/' + window.carta2_id  + ".png";
-    window.carta2_time ='http://127.0.0.1:5500/times/' + window.carta2_time  + ".png"; 
+    window.carta2_img ='cartas/' + window.carta2_id  + ".png";
+    window.carta2_time ='times/' + window.carta2_time  + ".png"; 
 
     img = document.getElementById('carta2_pos');
     img.innerHTML = window.carta2_pos;
@@ -366,7 +366,7 @@ function sortear() {
     img.innerHTML = window.carta2_tipo;
 
     img = document.getElementById('carta2');
-    img.src ='http://127.0.0.1:5500/cartas/' + window.carta2_tipo  + ".png";
+    img.src ='cartas/' + window.carta2_tipo  + ".png";
 
     img = document.getElementById('carta2_img');
     img.src = window.carta2_img;
@@ -380,8 +380,8 @@ function sortear() {
     window.carta3_pos = jog[2].pos;
     window.carta3_tipo = jog[2].tipo;
     window.carta3_time = jog[2].time;
-    window.carta3_img ='http://127.0.0.1:5500/cartas/' + window.carta3_id  + ".png";
-    window.carta3_time ='http://127.0.0.1:5500/times/' + window.carta3_time  + ".png"; 
+    window.carta3_img ='cartas/' + window.carta3_id  + ".png";
+    window.carta3_time ='times/' + window.carta3_time  + ".png"; 
 
     img = document.getElementById('carta3_pos');
     img.innerHTML = window.carta3_pos;
@@ -393,7 +393,7 @@ function sortear() {
     img.innerHTML = window.carta2_tipo;
 
     img = document.getElementById('carta3');
-    img.src ='http://127.0.0.1:5500/cartas/' + window.carta3_tipo  + ".png";
+    img.src ='cartas/' + window.carta3_tipo  + ".png";
 
     img = document.getElementById('carta3_img');
     img.src = window.carta3_img;
@@ -407,8 +407,8 @@ function sortear() {
     window.carta4_pos = jog[3].pos;
     window.carta4_tipo = jog[3].tipo;
     window.carta4_time = jog[3].time;
-    window.carta4_img ='http://127.0.0.1:5500/cartas/' + window.carta4_id  + ".png";
-    window.carta4_time ='http://127.0.0.1:5500/times/' + window.carta4_time  + ".png"; 
+    window.carta4_img ='cartas/' + window.carta4_id  + ".png";
+    window.carta4_time ='times/' + window.carta4_time  + ".png"; 
 
     img = document.getElementById('carta4_pos');
     img.innerHTML = window.carta4_pos;
@@ -420,7 +420,7 @@ function sortear() {
     img.innerHTML = window.carta4_tipo;
 
     img = document.getElementById('carta4');
-    img.src ='http://127.0.0.1:5500/cartas/' + window.carta4_tipo  + ".png";
+    img.src ='cartas/' + window.carta4_tipo  + ".png";
 
     img = document.getElementById('carta4_img');
     img.src = window.carta4_img;
@@ -448,7 +448,7 @@ function clickCarta(a) {
         delete window.nomes[a];
 
         var fundo = document.getElementById('jog0');
-        fundo.src = 'http://127.0.0.1:5500/cartas/' + jogTime[0].tipo  + ".png";
+        fundo.src = 'cartas/' + jogTime[0].tipo  + ".png";
         var nome = document.getElementById('jog0_nome');
         nome.innerHTML = jogTime[0].nome;
         var pos = document.getElementById('jog0_pos');
@@ -458,9 +458,9 @@ function clickCarta(a) {
         var tipo = document.getElementById('jog0_tipo');
         tipo.innerHTML = jogTime[0].tipo;
         var img = document.getElementById('jog0_img');
-        img.src = 'http://127.0.0.1:5500/cartas/' + jogTime[0].id + ".png";
+        img.src = 'cartas/' + jogTime[0].id + ".png";
         var time = document.getElementById('jog0_time');
-        time.src = 'http://127.0.0.1:5500/times/' + jogTime[0].time + ".png";
+        time.src = 'times/' + jogTime[0].time + ".png";
 
         switch(jogTime[0].pos){
             case 'GOL':
@@ -615,7 +615,7 @@ function clickCarta(a) {
             if(jogTime[k].time != ''){
             var id = 'jog'+ k;
             var fundo = document.getElementById(id);
-            fundo.src = 'http://127.0.0.1:5500/cartas/' + jogTime[k].tipo  + ".png";
+            fundo.src = 'cartas/' + jogTime[k].tipo  + ".png";
             var nome = document.getElementById(id+'_nome');
             nome.innerHTML = jogTime[k].nome;
             var pos = document.getElementById(id+'_pos');
@@ -625,9 +625,9 @@ function clickCarta(a) {
             var tipo = document.getElementById(id+'_tipo');
             tipo.innerHTML = jogTime[k].tipo;
             var img = document.getElementById(id+'_img');
-            img.src = 'http://127.0.0.1:5500/cartas/' + jogTime[k].id + ".png";
+            img.src = 'cartas/' + jogTime[k].id + ".png";
             var time = document.getElementById(id+'_time');
-            time.src = 'http://127.0.0.1:5500/times/' + jogTime[k].time + ".png"; 
+            time.src = 'times/' + jogTime[k].time + ".png"; 
             }
         }
 
